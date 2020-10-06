@@ -1,0 +1,30 @@
+<head>
+    <title>LOLCAT CLOCK</title>
+  
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <div id="header">
+          <h1 id="open-or-closed"></h1>
+      </div>
+
+  </body>
+
+  <script type="text/javascript">
+    
+    var openOrClosedJS = document.getElementById("open-or-closed");
+    var time = new Date().getHours(); 
+    var message; 
+
+    if (time < 07 || time > 12) 
+    {
+        message = "CLOSED";
+    } else {
+        message = "OPEN";
+    }
+
+    openOrClosedJS.innerText = message;
+
+  </script>
